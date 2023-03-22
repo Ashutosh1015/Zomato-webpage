@@ -5,57 +5,121 @@
 
 body{
   font-family: 'Merriweather', serif;
-  background-color: #f9fafc;
+  background-color: #ebf2ff;
 }
+
 .navbar{
   background-color:#FFF4E0;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+
+
 .navbar__brand{
   width: 100px;
 }
+
 .navbar__logo{
   width: 100%;
 }
-.nav__item{
+
+.button__primary{
   background-image: linear-gradient(
     to right,
     #ff512f 0%,
     #dd2476 51%,
     #ff512f 100%
     );
+
     color: #fff;
     border: none;
     padding: 12px;
     border-radius: 6px;
 
 }
-  .nav__item:hover{
+
+  .button__primary:hover{
     border: 5px solid #FFDEB9;
     cursor: pointer;
   }
 
 
-@media (min-width :768px) {
-  .navbar{
-    justify-content: space-between;
-     padding: 20px 30px;
+.container{
+  padding: 20px;
+  margin: 0 auto;
+}
 
-  }
+
+.hero__image__container{
+
+  width: 100%
 
 }
-@media (min-width :1024px) {
+
+.hero__image__shape{
+  width: 100%
+}
+
+.hero__image__pattren{
+  width: 100%
+}
+
+.hero__image{
+border-radius: 6px;
+box-shadow: 0px 25px 50px -20px #000;
+  width: 100%;
+}
+
+.hero__text{
+  font-size: 32px;
+  font-weight: 800;
+  margin: 20px 0px;
+  color: #1d3557;
+}
+
+            @media (min-width :768px) {
+
+
+  .navbar{
+    justify-content: space-between;
+    padding: 0 30px;
+
+  }
+.hero__container{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+}
+          @media (min-width :1024px) {
+
+
+   .navbar{
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 10px;
+     height: 60px;
+   }
+   .container{
+     max-width: 70%;
+   }
   .navbar__brand{
     width: 200px;
 
   }
-  .nav__item{
+  .button__primary{
     padding: 15px;
     font-size: 15px;
     font-weight: 700;
     border-radius: 9px;
+  }
+  .hero__description{
+    width: 100%;
+
+  }
+  .hero__text{
+    font-size: 30px;
   }
 
 }
